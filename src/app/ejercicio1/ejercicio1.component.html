@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-2"></div>
+        <div class="col-lg-6 col-md-8">
+            <div class="col-lg-12 text-center">
+                <h1>{{ title }}</h1>
+            </div>
+            <div class="col-lg-12">
+                <div class="col-lg-12">
+                        <div class="form-group">
+                            <label>Edad 1</label>
+                            <input type="number" class="form-control" [(ngModel)]="edadUno">
+                        </div>
+                        <div class="form-group">
+                            <label>Edad 2</label>
+                            <input type="number" class="form-control" [(ngModel)]="edadDos">
+                        </div>
+
+                        <div class="col-lg-12 pt-3 pb-3">
+                            <div class="col-lg-6">
+                                <button (click)="calcular()" class="btn btn-outline-primary">Calcular</button>
+                                <button (click)="limpiar()" class="btn btn-outline-primary">Limpiar</button>
+                            </div>
+                        </div>
+                   
+                    <div class="col-lg-6 col-md-8 pb-3">
+                        <label>Suma</label>
+                        <input type="text" class="form-control" [(ngModel)]="suma" disabled>
+                    </div>
+                    <div class="col-lg-6 col-md-8">
+                        <label>Promedio</label>
+                        <input type="text" class="form-control" [(ngModel)]="promedio" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-2"></div>
+        </div>
+    </div>
+
+
